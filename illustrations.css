@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  background: #f0f0f0;
+  font-family: sans-serif;
+  color: white;
+  padding-top: 80px;
+}
+
+.grid {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0;
+}
+
+.grid-sizer, .grid-item {
+  width: 30%;
+}
+
+.gutter-sizer {
+  width: 2.5%;
+}
+
+.grid-item {
+  margin-bottom: 20px;
+  margin-right: 2.5%;
+  background: #222;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  filter: grayscale(100%);
+  display: block;
+}
+
+.grid-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.grid-item:hover {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+  z-index: 2;
+  position: relative;
+}
+
+.grid-item img,
+.grid-item video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .grid-sizer, .grid-item {
+    width: 100% !important;
+  }
+
+  .grid-item {
+    margin-right: 0 !important;
+    margin-bottom: 15px;
+    filter: none !important;
+    transform: none !important;
+    cursor: default;
+  }
+
+  .grid-item:hover {
+    transform: none !important;
+    filter: none !important;
+  }
+
+  /* Eliminar interacciones en móvil */
+  a.no-lightbox {
+    pointer-events: none;
+  }
+}

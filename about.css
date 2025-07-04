@@ -1,0 +1,102 @@
+/* ABOUT */
+
+/* Arreglar barra de scroll */
+html {
+  overflow-y: scroll; /* fuerza siempre la barra de scroll, vacía o no */
+}
+
+
+.about-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px 30px;
+  padding-top: 80px; /* Ajusta este valor para que sea igual o mayor que el alto del header */
+  color: #7e7e7e;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+}
+
+.about-container h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2em;
+}
+
+.about-flex {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.about-image {
+  width: 200px;
+  height: auto;
+  border: 2px solid #333;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 0.9em;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Accordion styles */
+.accordion {
+  background-color: #e0e0e0;
+  color: #333;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  border-radius: 4px;
+  margin: 10px 0 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+.accordion:hover {
+  background-color: #d0d0d0;
+}
+
+.accordion.active {
+  background-color: #ccc;
+}
+
+/* Panel oculto por defecto */
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #fafafa;
+  padding: 0 15px;
+  margin: 0 0 15px 0;
+}
+
+.panel .small-text p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .about-flex {
+    flex-direction: column;
+  }
+
+  .about-image,
+  .about-text {
+    width: 100%;
+  }
+
+  .about-image {
+    margin-bottom: 15px;
+  }
+}
