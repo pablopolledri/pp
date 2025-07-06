@@ -1,3 +1,16 @@
+/* cerrar video desde overlay (refuerzo) */
+#clickCatcher {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: 9990; /* entre overlay (1200) y iframe (9998) */
+  cursor: default;
+}
+#clickCatcher.active {
+  display: block;
+}
+
 
 
 /* Texto Chico */
