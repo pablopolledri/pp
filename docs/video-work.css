@@ -81,9 +81,11 @@
   display: none;
   position: fixed;
   top: 0; left: 0;
-  width: 100vw; height: 100vh;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0,0,0,0.95);
-  z-index: 1200;
+  z-index: 9997; /* entre iframe y botón cerrar */
+  cursor: pointer;
 }
 
 #overlay.active {
@@ -158,6 +160,11 @@
     display: inline-block;
   }
 
+  #videoIframe {
+  z-index: 9998;
+}
+
+
   #videoIframe.active {
     width: 100vh;           /* ancho real */
     height: auto;           /* altura automática */
@@ -171,6 +178,7 @@
     top: auto;
     bottom: 8px;
     right: 8px;
+    z-index: 10000;
   }
 }
 
