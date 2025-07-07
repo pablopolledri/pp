@@ -1,3 +1,5 @@
+
+
 /* Texto Chico */
 .caption-small {
   font-size: 0.8em; /* o 12px, según lo que necesites */
@@ -20,7 +22,7 @@
   border: none;
   border-radius: 10px;
   box-shadow: none;
-  z-index: 9998;
+  z-index: 10001;
   background: transparent; /* <-- aquí */
   transition: width 0.3s ease, height 0.3s ease;
   margin: 0; /* asegurar que no haya margenes */
@@ -66,11 +68,9 @@
   display: none;
   position: fixed;
   top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100vw; height: 100vh;
   background: rgba(0,0,0,0.95);
-  z-index: 9997; /* entre iframe y botón cerrar */
-  cursor: pointer;
+  z-index: 10000;
 }
 
 #overlay.active {
@@ -92,7 +92,7 @@
   height: 48px;
   line-height: 44px;
   cursor: pointer;
-  z-index: 10000; /* sobre el overlay y el iframe */
+  z-index: 10002; /* sobre el overlay y el iframe */
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -145,11 +145,6 @@
     display: inline-block;
   }
 
-  #videoIframe {
-  z-index: 9998;
-}
-
-
   #videoIframe.active {
     width: 100vh;           /* ancho real */
     height: auto;           /* altura automática */
@@ -163,7 +158,6 @@
     top: auto;
     bottom: 8px;
     right: 8px;
-    z-index: 10000;
   }
 }
 
