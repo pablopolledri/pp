@@ -17,7 +17,7 @@ const headerHTML = `
       <nav class="header-nav">
         <a href="shortfilms.html">Short Films</a>
         <a href="motiongraphics.html">Motion Graphics</a>
-        <a href="Livevisuals.html">Live Visuals</a>
+        <a href="livevisuals.html">Live Visuals</a>
         <a href="illustrations.html">Illustrations</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
@@ -32,7 +32,7 @@ const headerHTML = `
   <nav class="offcanvas-menu" aria-label="Menú móvil">
     <a href="shortfilms.html">Short Films</a>
     <a href="motiongraphics.html">Motion Graphics</a>
-    <a href="Livevisuals.html">Live Visuals</a>
+    <a href="livevisuals.html">Live Visuals</a>
     <a href="illustrations.html">Illustrations</a>
     <a href="contact.html">Contact</a>
     <a href="about.html">About</a>
